@@ -53,7 +53,7 @@ function App() {
         id: Math.max(...products.map(p => p.id), 0) + 1,
         ...productData
       };
-      setProducts([newProduct, ...products]);
+      setProducts([...products, newProduct]);
     }
     setShowForm(false);
   };
